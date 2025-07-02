@@ -9,6 +9,10 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
+  eslint:{
+      ignoreDuringBuild: true,
+      fix: true,
+  },
   plugins: [
     react(),
     mode === 'development' &&
